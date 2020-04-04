@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Question</th>
+  </tr>
+  <% if @questions.present? %>
+	  <% @questions.each do |question|%>
+	  	<tr>
+		    <td><%= question.title %></td>
+		  </tr>
+	  <% end %>
+	<% else %>
+		<h3>No Question Available</h3>
+	<% end %>
+</table>
